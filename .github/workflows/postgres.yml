@@ -2,6 +2,7 @@ name: Postgres-Connector
 on: [push]
 jobs:
    example-job:
+     runs-on: ubuntu-latest
      steps:
       - name: Connect to Postgres
         run:  node client.js
