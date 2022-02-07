@@ -3,9 +3,9 @@ on: [push]
 jobs:
    example-job:
      runs-on: Ubuntu-Latest
-    steps:
-    - name: Connect to Postgres
-      run:  node client.js
-      env: 
-        POSTGRES_HOST: postgres 
-        POSTGRES_PORT: 5432
+     steps:
+      - name: Connect to Postgres
+        run:  node client.js
+        env: 
+          POSTGRES_HOST: postgres 
+          POSTGRES_PORT: 5432
